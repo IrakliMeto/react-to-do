@@ -1,12 +1,16 @@
 import "./reset.scss";
 import "./App.scss";
-import { Card } from "./components/Card";
-import { Modal } from "./components/modal";
+import { Modal } from "./components/rate/modal";
+import { Test } from "./components/test/Test";
 
 function App() {
   return (
     <div className="App">
-      <Modal />
+      {/* task 3  */}
+      {/* <Modal />  */}
+
+      {/* duryng lessons */}
+      <Test />
     </div>
   );
 }

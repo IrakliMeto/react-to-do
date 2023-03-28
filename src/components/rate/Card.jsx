@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "./Button";
 import { Rate } from "./Rate";
-import star from "../assets/images/icon-star.svg";
+import star from "../../assets/images/icon-star.svg";
 
 import "./Card.scss";
 
