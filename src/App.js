@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       {/* task 3  */}
-      {/* <Modal />  */}
+      {/* <Modal /> */}
 
       {/* duryng lessons */}
       {/* <Test /> */}

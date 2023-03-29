@@ -1,0 +1,44 @@
+.result {
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+  background: #426469;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:first-child {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+
+    span {
+      font-size: 13px;
+      color: #7f9d9f;
+    }
+  }
+
+  &__bill {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    text-align: right;
+    letter-spacing: -1px;
+    color: #fff;
+  }
+}

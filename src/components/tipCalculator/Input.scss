@@ -1,0 +1,41 @@
+.input {
+  &__title {
+    margin-bottom: 6px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5e7a7d;
+  }
+
+  &__box {
+    width: 100%;
+    height: 48px;
+    padding: 6px 15px;
+    background: #f3f9fa;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+
+    &:hover {
+      border: 2px solid #426469;
+    }
+
+    & > input {
+      padding-left: 30px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      width: 100%;
+      text-align: right;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      color: #00474b;
+    }
+  }
+}
