@@ -9,9 +9,7 @@ export const Modal = () => {
   const [submited, setSubmited] = useState(false);
 
   const onSubmitHandler = (submitedData) => {
-    console.log(submitedData, " gurama");
     setSubmited(submitedData);
-    console.log(submited, " daloge yleoo");
   };
 
   const onResetHandler = () => {

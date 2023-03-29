@@ -1,0 +1,1 @@
+import "./ResultHolder.scss";

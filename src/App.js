@@ -2,6 +2,7 @@ import "./reset.scss";
 import "./App.scss";
 import { Modal } from "./components/rate/modal";
 import { Test } from "./components/test/Test";
+import { TipCalculator } from "./components/tipCalculator/TipCalculator";
 
 function App() {
   return (
@@ -10,7 +11,10 @@ function App() {
       {/* <Modal />  */}
 
       {/* duryng lessons */}
-      <Test />
+      {/* <Test /> */}
+
+      {/* tip calculator */}
+      <TipCalculator />
     </div>
   );
 }
