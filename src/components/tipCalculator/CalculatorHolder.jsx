@@ -16,11 +16,30 @@ const tipsList = [
   { id: 5, percent: 50 },
 ];
 
-export const CalculatorHolder = ({ onSelect, onChange, value, activeItem }) => {
+export const CalculatorHolder = ({
+  onSelect,
+  onChange,
+  value,
+  inputValueBill,
+  inputValuePeople,
+  activeItem,
+  onChangeBill,
+  onChangePeople,
+}) => {
   return (
     <div className="calculator-holder">
-      <Input title={"Bill"} icon={dolar} />
-      <Input title={"Number of People"} icon={person} />
+      <Input
+        inputValue={inputValueBill}
+        title={"Bill"}
+        icon={dolar}
+        onChangeInput={onChangeBill}
+      />
+      <Input
+        inputValue={inputValuePeople}
+        title={"Number of People"}
+        icon={person}
+        onChangeInput={onChangePeople}
+      />
       <TipsWrapper
         activeItem={activeItem}
         onSelect={onSelect}

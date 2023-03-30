@@ -1,6 +1,6 @@
 import "./Input.scss";
 
-export const Input = ({ icon, title }) => {
+export const Input = ({ icon, title, onChangeInput, inputValue }) => {
   return (
     <div className="input">
       <label className="input__title" htmlFor="input">
@@ -8,7 +8,12 @@ export const Input = ({ icon, title }) => {
       </label>
       <div className="input__box">
         <img src={icon} alt="icon" />
-        <input type="number" className="input" />
+        <input
+          value={inputValue}
+          type="number"
+          className="input"
+          onChange={onChangeInput}
+        />
       </div>
     </div>
   );
