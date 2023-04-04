@@ -76,8 +76,8 @@ export const TipCalculator = () => {
       <ResultHolder
         onReset={onResetHandler}
         isActive={tipSum || totalSum}
-        tipAmount={tipSum}
-        totalAmount={totalSum}
+        tipOnPerson={tipSum}
+        totalOnPerson={totalSum}
       />
     </div>
   );

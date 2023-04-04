@@ -1,7 +1,12 @@
 import "./ResultHolder.scss";
 import { Button } from "./Button";
 
-export const ResultHolder = ({ tipAmount, totalAmount, onReset, isActive }) => {
+export const ResultHolder = ({
+  tipOnPerson,
+  totalOnPerson,
+  onReset,
+  isActive,
+}) => {
   return (
     <div className="result">
       <div className="result__item">
@@ -11,7 +16,7 @@ export const ResultHolder = ({ tipAmount, totalAmount, onReset, isActive }) => {
             <span>/ Person</span>
           </div>
 
-          <div className="result__bill">{tipAmount}$</div>
+          <div className="result__bill">{tipOnPerson}$</div>
         </div>
 
         <div className="result__text">
@@ -20,7 +25,7 @@ export const ResultHolder = ({ tipAmount, totalAmount, onReset, isActive }) => {
             <span>/ Person</span>
           </div>
 
-          <div className="result__bill">{totalAmount}$</div>
+          <div className="result__bill">{totalOnPerson}$</div>
         </div>
       </div>
 

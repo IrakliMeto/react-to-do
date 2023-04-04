@@ -6,8 +6,6 @@ import person from "../../assets/icons/person.svg";
 import { Input } from "./Input";
 import { TipsWrapper } from "./TipsWrapper";
 
-import { useEffect, useState } from "react";
-
 const tipsList = [
   { id: 1, percent: 5 },
   { id: 2, percent: 10 },
