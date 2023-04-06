@@ -1,20 +1,20 @@
 import "./reset.scss";
 import "./App.scss";
 import { Modal } from "./components/rate/modal";
-import { Test } from "./components/test/Test";
 import { TipCalculator } from "./components/tipCalculator/TipCalculator";
+import { AccordionCard } from "./components/accordion/AccordionCard";
+import { Todo } from "./components/todo/Todo";
 
 function App() {
   return (
     <div className="App">
-      {/* task 3  */}
       {/* <Modal /> */}
 
-      {/* duryng lessons */}
-      {/* <Test /> */}
+      {/* <TipCalculator /> */}
 
-      {/* tip calculator */}
-      <TipCalculator />
+      {/* <AccordionCard /> */}
+
+      <Todo />
     </div>
   );
 }

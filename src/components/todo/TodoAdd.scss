@@ -1,0 +1,44 @@
+.todo-add {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-input {
+  width: 360px;
+  height: 48px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding: 5px 10px 5px 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #0d0d0d;
+
+  &::placeholder {
+    color: #888888;
+  }
+}
+
+.add-button {
+  width: 50px;
+  height: 48px;
+  color: white;
+  font-size: 34px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #b3b3b3;
+  cursor: not-allowed;
+  opacity: 0.7;
+  transition: 0.2s ese;
+
+  &--active {
+    background-color: #007fdb;
+    cursor: pointer;
+    opacity: 1;
+  }
+}
