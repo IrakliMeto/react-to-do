@@ -11,7 +11,7 @@ import flowerImage from "../../assets/images/flower.jpg";
 
 export const Todo = () => {
   const [todoList, setTodoList] = useState(
-    JSON.parse(localStorage.getItem("todoList"))
+    JSON.parse(localStorage.getItem("todoList")) || []
   );
   const [todo, setTodo] = useState("");
   const [editItem, setEditItem] = useState(null);
