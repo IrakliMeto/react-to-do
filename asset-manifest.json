@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/study-react/static/css/main.c5f643bb.css",
+    "main.js": "/study-react/static/js/main.5334f856.js",
+    "static/media/flower.jpg": "/study-react/static/media/flower.cec10375d15c184f7b74.jpg",
+    "static/media/person.svg": "/study-react/static/media/person.71a756df12c93c3587731c42e9f96228.svg",
+    "static/media/$.svg": "/study-react/static/media/$.ec2fab925a76c1a1e9cca4938a10356c.svg",
+    "static/media/edit.svg": "/study-react/static/media/edit.6aade29cf66734c56b3e8c7191932d14.svg",
+    "index.html": "/study-react/index.html",
+    "static/media/save.svg": "/study-react/static/media/save.5058c22ce954ba6d898217547203bac5.svg",
+    "static/media/circle.svg": "/study-react/static/media/circle.91b92edad1b3860390f8b90c0c51045b.svg",
+    "static/media/icon-star.svg": "/study-react/static/media/icon-star.12766a8d207af861a70f92500634c8be.svg",
+    "static/media/trash.svg": "/study-react/static/media/trash.ae61a8378c7855b7ac776942134d36a6.svg",
+    "static/media/done.svg": "/study-react/static/media/done.18d6fbdc5868117107e56d9c4a17a141.svg",
+    "main.c5f643bb.css.map": "/study-react/static/css/main.c5f643bb.css.map",
+    "main.5334f856.js.map": "/study-react/static/js/main.5334f856.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5f643bb.css",
+    "static/js/main.5334f856.js"
+  ]
+}
