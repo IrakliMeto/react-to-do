@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/study-react/static/css/main.c5f643bb.css",
+    "main.css": "/study-react/static/css/main.c53714af.css",
     "main.js": "/study-react/static/js/main.5ab85cb5.js",
     "static/media/flower.jpg": "/study-react/static/media/flower.cec10375d15c184f7b74.jpg",
     "static/media/person.svg": "/study-react/static/media/person.71a756df12c93c3587731c42e9f96228.svg",
@@ -12,11 +12,11 @@
     "static/media/icon-star.svg": "/study-react/static/media/icon-star.12766a8d207af861a70f92500634c8be.svg",
     "static/media/trash.svg": "/study-react/static/media/trash.ae61a8378c7855b7ac776942134d36a6.svg",
     "static/media/done.svg": "/study-react/static/media/done.18d6fbdc5868117107e56d9c4a17a141.svg",
-    "main.c5f643bb.css.map": "/study-react/static/css/main.c5f643bb.css.map",
+    "main.c53714af.css.map": "/study-react/static/css/main.c53714af.css.map",
     "main.5ab85cb5.js.map": "/study-react/static/js/main.5ab85cb5.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5f643bb.css",
+    "static/css/main.c53714af.css",
     "static/js/main.5ab85cb5.js"
   ]
 }
