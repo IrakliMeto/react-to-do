@@ -1,14 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 import "./Todo.scss";
+
 import { TodoItem } from "./TodoItem";
 import { TodoAdd } from "./TodoAdd";
+import { DateTime } from "./DateTime";
+
 import todoImage from "../../assets/images/todo.png";
 import flowerImage from "../../assets/images/flower.jpg";
 
 export const Todo = () => {
-  const [todoList, setTodoList] = useState([]);
+  const [todoList, setTodoList] = useState(
+    JSON.parse(localStorage.getItem("todoList"))
+  );
   const [todo, setTodo] = useState("");
-  const [edit, setEdit] = useState(false);
+  const [editItem, setEditItem] = useState(null);
 
   const addTodo = () => {
     if (todo) {
@@ -44,7 +50,7 @@ export const Todo = () => {
   };
 
   const saveTodo = (selectedTodo) => {
-    if (!todo) return;
+    if (!todo || selectedTodo.isDone) return;
 
     const updatedTodoList = todoList.map((item) => {
       if (selectedTodo.id === item.id) {
@@ -59,26 +65,46 @@ export const Todo = () => {
 
     setTodoList(updatedTodoList);
     setTodo("");
-    setEdit(!edit);
+    toggleEddit(selectedTodo.id);
+  };
+
+  const toggleEddit = (id) => {
+    if (editItem === id) {
+      setEditItem(null);
+    } else {
+      setEditItem(id);
+    }
   };
 
   const editTodo = (selectedTodo) => {
+    if (selectedTodo.isDone) return;
+
     setTodo(selectedTodo.text);
-    setEdit(!edit);
+    toggleEddit(selectedTodo.id);
   };
 
   const setValueHandler = (e) => {
     setTodo(e.target.value);
   };
 
+  const setLocalStorage = () => {
+    console.log("set", todoList);
+    localStorage.setItem("todoList", JSON.stringify(todoList));
+  };
+
+  useEffect(() => {
+    setLocalStorage();
+  }, [todoList]);
+
   return (
     <div className="todo-holder">
       <div className="side">
-        <h1>Todo</h1>
+        <h1>To do</h1>
         <img src={todoImage} alt="" />
       </div>
       <div className="todo">
         <div className="todo__header">
+          <DateTime />
           <img src={flowerImage} alt="Flower" />
         </div>
         <div className="todo__wrapper">
@@ -86,7 +112,6 @@ export const Todo = () => {
             onAddTodo={() => {
               addTodo();
             }}
-            isEdit={edit}
             value={todo}
             setValue={(e) => {
               setValueHandler(e);
@@ -97,9 +122,10 @@ export const Todo = () => {
             {todoList.map((item) => (
               <TodoItem
                 key={item.id}
+                id={item.id}
                 isDone={item.isDone}
                 text={item.text}
-                isEdit={edit}
+                editItem={editItem}
                 onEdit={() => {
                   editTodo(item);
                 }}

@@ -1,6 +1,6 @@
 import "./TodoAdd.scss";
 
-export const TodoAdd = ({ value, onAddTodo, setValue, isEdit }) => {
+export const TodoAdd = ({ value, onAddTodo, setValue }) => {
   return (
     <div className="todo-add">
       <input

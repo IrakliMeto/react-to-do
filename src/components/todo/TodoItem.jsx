@@ -7,24 +7,25 @@ import editIcon from "../../assets/icons/edit.svg";
 import saveIcon from "../../assets/icons/save.svg";
 
 export const TodoItem = ({
+  id,
   text,
   onEdit,
   onSave,
   onDelete,
   onDone,
   isDone,
-  isEdit,
+  editItem,
 }) => {
   return (
     <div className={`todo-item ${isDone ? "todo-item--done" : ""}`}>
       <h4 className="todo-item__text">{text}</h4>
       <div className="todo-item__box">
-        {!isEdit && (
+        {editItem !== id && (
           <button onClick={onEdit} className="todo-item__button">
             <img src={editIcon} alt="" />
           </button>
         )}
-        {isEdit && (
+        {editItem === id && (
           <button onClick={onSave} className="todo-item__button">
             <img src={saveIcon} alt="" />
           </button>
